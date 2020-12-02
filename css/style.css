@@ -1,0 +1,791 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: rgb(22, 31, 32);
+}
+
+.fas {
+    color: gray;
+}
+
+.fab,
+.fa {
+    color: white;
+
+}
+
+.nav ul li a {
+    color: rgb(151, 189, 139) !important;
+}
+
+/*  nav change color  */
+.activ-aa {
+    background-color: rgba(189 198 200);
+}
+
+
+.navbar {
+    transition: background-color 1s !important;
+
+}
+
+/* حجم صورة  */
+.carousel-item img {
+    height: 100vh;
+    background: translate;
+    background-size: cover;
+    background-position: center center;
+}
+
+.go {
+    display: inline-block;
+    border: 2px solid rgba(255, 255, 255, 0.7);
+    color: #fff;
+    width: 32px;
+    height: 50px;
+    border-radius: 24px;
+    text-indent: -9999px;
+    position: relative;
+    top: 99px;
+    right: 35%;
+    cursor: pointer;
+}
+
+.go span {
+
+    height: 8px;
+    width: 8px;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    position: absolute;
+    left: 10px;
+    top: 6px;
+    -webkit-animation: animation 2.5s infinite linear;
+    animation: animation 2.5s infinite linear;
+    background-color: rgb(255, 255, 255);
+}
+
+
+@keyframes animation {
+    0% {
+        opacity: 0;
+        top: -4px;
+    }
+
+    10% {
+        opacity: 1;
+        top: 6px;
+    }
+
+    35% {
+        opacity: 0;
+        top: 20px;
+    }
+
+    100% {
+        opacity: 0;
+        top: 6px;
+    }
+}
+
+/*   change box-shadow color for all img  */
+.slidnav {
+    cursor: pointer;
+    width: 200px;
+    height: 250px;
+    background-color: rgb(255, 255, 255);
+    position: fixed;
+    top: 25%;
+    right: -200px;
+    z-index: 99999999;
+    display: flex !important;
+    flex-wrap: wrap;
+    padding: 10px;
+
+}
+
+.slidnavb::before {
+    background: rgb(255, 255, 255);
+    position: absolute;
+    top: 10px;
+    left: -46px;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f085";
+    font-size: 25px;
+    padding: 9px;
+    border-radius: solid 30px red;
+    margin-right: 2px;
+
+
+}
+
+.slidnava::before {
+    background: rgb(255, 255, 255);
+    position: absolute;
+    top: 35px;
+    left: -46px;
+    font-size: 25px;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f07a";
+    padding: 9px;
+    margin-top: 20px;
+}
+
+.slidnava:hover {
+    color: blue;
+}
+
+.slidnavb:hover {
+    color: blue;
+}
+
+.slidnav span {
+    border-radius: 30%;
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+    z-index: 9999999999;
+
+}
+
+.aaa.slidnav {
+    right: 0;
+}
+
+body {
+    overflow: hidden;
+}
+
+/*  ----------------------------- */
+
+#loding {
+    background-color: rgba(207, 115, 23);
+    position: fixed;
+    z-index: 99999999999999999999999999999;
+    top: 0px;
+    right: 0px;
+    left: 0px;
+    bottom: 0px;
+
+}
+
+.lds-roller {
+    display: inline-block;
+    position: relative;
+    top: 50%;
+    right: -46%;
+    width: 80px;
+    height: 80px;
+}
+
+.lds-roller div {
+    animation: lds-roller 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+    transform-origin: 40px 40px;
+}
+
+.lds-roller div:after {
+    content: " ";
+    display: block;
+    position: absolute;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: #dfc;
+    margin: -4px 0 0 -4px;
+}
+
+.lds-roller div:nth-child(1) {
+    animation-delay: -0.036s;
+}
+
+.lds-roller div:nth-child(1):after {
+    top: 63px;
+    left: 63px;
+}
+
+.lds-roller div:nth-child(2) {
+    animation-delay: -0.072s;
+}
+
+.lds-roller div:nth-child(2):after {
+    top: 68px;
+    left: 56px;
+}
+
+.lds-roller div:nth-child(3) {
+    animation-delay: -0.108s;
+}
+
+.lds-roller div:nth-child(3):after {
+    top: 71px;
+    left: 48px;
+}
+
+.lds-roller div:nth-child(4) {
+    animation-delay: -0.144s;
+}
+
+.lds-roller div:nth-child(4):after {
+    top: 72px;
+    left: 40px;
+}
+
+.lds-roller div:nth-child(5) {
+    animation-delay: -0.18s;
+}
+
+.lds-roller div:nth-child(5):after {
+    top: 71px;
+    left: 32px;
+}
+
+.lds-roller div:nth-child(6) {
+    animation-delay: -0.216s;
+}
+
+.lds-roller div:nth-child(6):after {
+    top: 68px;
+    left: 24px;
+}
+
+.lds-roller div:nth-child(7) {
+    animation-delay: -0.252s;
+}
+
+.lds-roller div:nth-child(7):after {
+    top: 63px;
+    left: 17px;
+}
+
+.lds-roller div:nth-child(8) {
+    animation-delay: -0.288s;
+}
+
+.lds-roller div:nth-child(8):after {
+    top: 56px;
+    left: 12px;
+}
+
+@keyframes lds-roller {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+
+
+
+
+
+
+
+#btn {
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    border-radius: 50%;
+    z-index: 9999999;
+    display: none;
+}
+
+
+
+.back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .7) !important;
+    z-index: 9999999;
+    top: 0px;
+}
+
+
+#bestfood {
+    margin-bottom: 300px;
+}
+
+#bestfood img {
+    box-shadow: 20px 20px 30px var(--box-shadow-color);
+    width: 300px;
+    height: 300px;
+}
+
+#background {
+    position: fixed;
+    top: 10px;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 999999 !important;
+}
+
+#showfromid {
+    position: relative;
+    width: 50%;
+    height: 500px;
+    background-size: 100% 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(26, 23, 23);
+}
+
+#showfromid img {
+    width: 300px;
+    height: 300px;
+}
+
+#close {
+    z-index: 999999 !important;
+    position: absolute;
+    top: 14px;
+    right: 14px;
+}
+
+#showfromid i {
+    font-size: 22px;
+    cursor: pointer;
+}
+
+.best-img1 {
+    position: relative;
+}
+
+.sell-back1 {
+    position: absolute;
+    top: 0%;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.5);
+    transition: all .3s ease-in;
+
+
+}
+
+.text1 {
+    display: flex;
+    justify-content: center;
+    align-items: center !important;
+    position: absolute;
+    top: 45%;
+    left: 20%;
+
+}
+
+
+
+.best-img1:hover .sell-back1 {
+    opacity: 1;
+    transform: translate();
+}
+
+
+.text,
+.sell-back {
+
+    animation: move 3s infinite;
+}
+
+
+.ico1 {
+
+    display: flex;
+    font-size: 1.5rem;
+    border: solid 2px black;
+    border-radius: 50%;
+    padding: 10px;
+    transition: .7s;
+    animation: icon1 2s alternate;
+}
+
+@keyframes icon1 {
+    0% {
+        left: -300%;
+    }
+
+    100% {
+        left: 20%;
+        opacity: 0;
+    }
+}
+
+.ico1:hover {
+    animation: icon 1s ease-in-out .5s infinite alternate;
+    background-color: cadetblue;
+    cursor: pointer;
+    padding: 20px;
+}
+
+
+.sell-back {
+    position: relative;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.5);
+    transition: all .3s ease-in;
+}
+
+
+.BONSAI-PLANT img {
+    width: 600px;
+    height: 500px;
+    background-size: cover;
+    background-position: center center;
+    box-shadow: 20px 20px 30px var(--box-shadow-color);
+}
+
+.best-img img {
+    box-shadow: 20px 20px 30px var(--box-shadow-color);
+}
+
+
+
+.text,
+.sell-back {
+    display: flex;
+    justify-content: center;
+    align-items: center !important;
+    position: relative;
+    animation: move 3s infinite;
+}
+
+.ico {
+    display: flex;
+    font-size: 1.5rem;
+    border: solid 2px black;
+    border-radius: 50%;
+    padding: 10px;
+    transition: .7s;
+    animation: icon 2s alternate;
+}
+
+@keyframes icon {
+    0% {
+        left: -300%;
+    }
+
+    100% {
+        left: 20%;
+        opacity: 0;
+    }
+}
+
+.ico:hover {
+    animation: icon 1s ease-in-out .5s infinite alternate;
+    background-color: cadetblue;
+    cursor: pointer;
+    padding: 20px;
+}
+
+.food-TYPES img {
+    margin: 5px;
+    box-shadow: 20px 20px 30px var(--box-shadow-color);
+}
+
+.house-PLANt-text {
+    color: rgb(32, 100, 0);
+}
+
+/*----- PLANT-BY-ROOM  ------*/
+
+.PLANT-BY-ROOM img {
+
+    width: 100%;
+    height: 250px;
+    max-width: 400px;
+    max-height: 400px;
+    box-shadow: 20px 20px 30px var(--box-shadow-color);
+    border: solid 1px rgba(28, 129, 212, .5);
+    margin-bottom: 30px;
+    position: relative;
+
+}
+
+.Recent-Work .fas {
+    color: rgba(0, 0, 0, .9);
+}
+
+.back1 {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 30%;
+    transition: opacity 2s;
+    opacity: 0;
+}
+
+.img-hover {
+    width: 100%;
+    display: block;
+    justify-content: end;
+    align-items: center;
+}
+
+.img-hover:hover .back1 {
+    height: auto;
+    opacity: 1;
+    font-weight: bolder;
+    transform: translate();
+}
+
+.all img {
+    width: 100%;
+    height: 250px;
+    background-size: cover;
+}
+
+.video {
+    left: 0;
+    top: 0;
+    max-width: 100%;
+    background-color: rgba(0, 0, 0, .5);
+    z-index: 99999;
+}
+
+video:hover {
+    opacity: .5;
+}
+
+.video-wrapper {
+
+    justify-content: space-between !important;
+    text-align: center;
+}
+
+.img-card {
+    transform-origin: 65% 75%;
+    transition: transform 1s, filter .5s ease-out;
+    position: relative;
+}
+
+.img-card:hover {
+    transform: scale(1.05);
+    opacity: .8;
+    font-weight: bolder;
+    transform: translate();
+}
+
+.img-hover1 {
+    width: 100%;
+    display: block;
+    justify-content: end;
+    align-items: center;
+}
+
+.anmi1,
+.anmi2,
+.anmi3,
+.anmi4 {
+    text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
+    color: rgb(39, 53, 82);
+    font-size: 3rem;
+}
+
+.anmi1 {
+    font-size: 44px;
+    position: absolute;
+    left: 0%;
+    top: 45;
+    width: 100%;
+    animation: mov 3s alternate;
+    transition: 9s all;
+    opacity: 1;
+}
+
+.anmi2 {
+    font-size: 30px;
+    position: absolute;
+    width: 100%;
+    right: 0%;
+    bottom: 50%;
+    animation: mov2 3s alternate;
+    transition: 9s all;
+    opacity: 1;
+}
+
+.anmi3 {
+    font-size: 30px;
+    position: absolute;
+    right: 0%;
+    bottom: 50%;
+    width: 100%;
+    animation: mov3 3s alternate;
+    transition: 9s all;
+    opacity: 1;
+}
+
+.anmi4 {
+    font-size: 30px;
+    position: absolute;
+    right: 0%;
+    bottom: 25%;
+    width: 100%;
+    animation: mov4 3s alternate;
+    transition: 9s all;
+    opacity: 1;
+}
+
+.text-inner {
+    text-transform: uppercase;
+    position: relative;
+}
+
+@keyframes mov {
+    0% {
+        left: -300%;
+        opacity: 0;
+    }
+
+    100% {
+        left: 0%;
+        opacity: 1;
+    }
+}
+
+@keyframes mov2 {
+    0% {
+        bottom: -300%;
+        opacity: 0;
+    }
+
+    100% {
+        bottom: 50%;
+        opacity: 1;
+    }
+}
+
+@keyframes mov3 {
+    0% {
+        left: -300%;
+        opacity: 0;
+    }
+
+    100% {
+        left: 0%;
+        opacity: 1;
+    }
+}
+
+@keyframes mov4 {
+    0% {
+        right: -300%;
+        opacity: 0;
+    }
+
+    100% {
+        right: 0%;
+        opacity: 1;
+    }
+}
+
+
+/*---- contact  ----*/
+.contact {
+    background-color: rgba(0, 0, 0, 0.9);
+    color: #917474 !important;
+    font-size: 14px;
+}
+
+.inner-contact h5 {
+    color: rgb(218, 217, 204);
+    font-size: 20;
+}
+
+.con-Hours ul {
+    text-align: start;
+    color: #797979 !important;
+    list-style-type: none;
+    position: relative;
+}
+
+.con-Hours ul li {
+    font-size: 14px;
+    margin-bottom: 6px;
+    padding-bottom: 7px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.con-info h5 .fas {
+    font-size: 14px;
+    text-align: start;
+}
+
+.con-info p {
+    margin-bottom: 6px;
+    padding-bottom: 7px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    color: #797979;
+}
+
+.con-info p:hover {
+    color: white;
+}
+
+.con-info p a:hover {
+    text-decoration: none;
+    color: white;
+}
+
+.con-info p a {
+    text-decoration: none;
+    color: #797979;
+}
+
+.con-info {
+    position: relative;
+}
+
+.back-info {
+    position: absolute;
+    opacity: 0.11;
+    background: url('../img/map.jpg');
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+    height: 100%;
+}
+
+
+/*---- footer  ----*/
+.footer {
+    background-color: rgba(0, 0, 0, 0.9);
+    color: #797979 !important;
+    font-size: 14px;
+}
+
+.soci {
+    font-size: 10px;
+}
+
+.face:hover {
+    background: #3b5998;
+}
+
+.twet:hover {
+    background: #00acee;
+}
+
+.inst:hover {
+    background: #3f729b;
+}
+
+.yout:hover {
+    background: #FF0000;
+}
